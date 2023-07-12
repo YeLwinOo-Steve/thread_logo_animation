@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'thread_logo.dart';
+import 'threads_logo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Thread logo animation',
+      title: 'Threads logo animation',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const ThreadLogo(),
+      home: const ThreadsLogo(),
     );
   }
 }

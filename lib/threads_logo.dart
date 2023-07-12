@@ -1,17 +1,17 @@
 import 'package:atlas_icons/atlas_icons.dart';
 import 'package:flutter/material.dart';
 
-import 'path/thread_path.dart';
+import 'path/threads_path.dart';
 import 'shapes/custom_track.dart';
 
-class ThreadLogo extends StatefulWidget {
-  const ThreadLogo({super.key});
+class ThreadsLogo extends StatefulWidget {
+  const ThreadsLogo({super.key});
 
   @override
-  State<ThreadLogo> createState() => _ThreadLogoState();
+  State<ThreadsLogo> createState() => _ThreadsLogoState();
 }
 
-class _ThreadLogoState extends State<ThreadLogo>
+class _ThreadsLogoState extends State<ThreadsLogo>
     with SingleTickerProviderStateMixin {
   late AnimationController _animation;
   PaintingStyle paintingStyle = PaintingStyle.stroke;
@@ -112,7 +112,7 @@ class _ThreadLogoState extends State<ThreadLogo>
               stops: stops,
             ).createShader(bounds),
             child: const Text(
-              'THREAD',
+              'THREADS',
               style: TextStyle(
                 fontSize: 50.0,
                 fontWeight: FontWeight.w700,
@@ -124,7 +124,7 @@ class _ThreadLogoState extends State<ThreadLogo>
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.6,
             height: MediaQuery.of(context).size.height * 0.3,
-            child: ThreadPath(
+            child: ThreadsPath(
               animation: _animation.view,
               colorGradient: colors,
               paintingStyle: paintingStyle,

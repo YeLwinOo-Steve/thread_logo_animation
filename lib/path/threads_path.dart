@@ -2,8 +2,8 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:thread_animation/extensions/path_ex.dart';
 
-class ThreadPath extends AnimatedWidget {
-  const ThreadPath({
+class ThreadsPath extends AnimatedWidget {
+  const ThreadsPath({
     super.key,
     this.strokeWidth = 20.0,
     required this.colorGradient,
